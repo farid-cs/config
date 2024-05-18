@@ -1,4 +1,5 @@
 # TODO
+- Migrate to gitlab
 - Migrate to lazy.nvim
 - Add lsp to neovim config
 - Add dunst to the config
