@@ -45,6 +45,9 @@ disabled = true
 [deno]
 disabled = true
 
+[directory]
+truncation_length = 0
+
 [direnv]
 disabled = true
 
