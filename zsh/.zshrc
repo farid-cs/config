@@ -11,8 +11,8 @@ zmodload zsh/complist
 compinit
 
 
-alias grep='grep --color=auto'
-alias ls='ls --color=auto --group-directories-first'
+alias grep='grep --color'
+alias ls='ls --color --group-directories-first'
 alias n='nvim'
 alias t='sudo tlp start'
 alias s='sensors'
@@ -29,4 +29,4 @@ lf() {
 }
 eval "$(starship init zsh)"
 setopt autocd
-[ -f "$HOME/TODO.md" ] && bat --paging=never "$HOME/TODO.md"
+nb
