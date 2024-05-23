@@ -29,4 +29,3 @@ lf() {
 }
 eval "$(starship init zsh)"
 setopt autocd
-nb

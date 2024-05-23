@@ -8,7 +8,8 @@ $(HOME)/.zshenv:.zshenv
 	cp $< $@
 $(PACKER):
 	git clone --depth 1 $(PACKER_LINK) $@
+	nvim --headless -u nvim/lua/plugins.lua -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 uninstall:
-	rm -rvf $(HOME)/.zshenv $(PACKER)
+	rm -rvf $(HOME)/.zshenv $(PACKER) ~/.local/share/nvim/site/pack/packer/start
 
-.PHONY default install uninstall
+.PHONY: default install uninstall

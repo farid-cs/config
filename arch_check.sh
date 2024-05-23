@@ -1,12 +1,10 @@
 #!/bin/sh
-# check if all the needed packages are installed on Arch linux.
-
 package_list=$(cat arch_deps)
 missing=""
 
 for pkg in $package_list;do
 	pacman -Q $pkg 2>/dev/null ||
-	missing="$pkg ${missing}"
+	missing="$pkg $missing"
 done
 
 [ -z "$missing" ] && echo "All packages are present" && exit 0

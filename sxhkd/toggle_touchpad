@@ -1,14 +1,8 @@
 #!/bin/sh
+touchpad_line=$(xinput list --name-only | grep Touchpad)
+touchpad_name=$(echo "$touchpad_line" | tr -d '∼' | xargs)
 
-file=/tmp/touchpad_on
-touchpad=$(xinput list --name-only | grep 'Touchpad' | tr -d '∼' | xargs)
-
-if [ -f $file ];then
-	rm $file
-	xinput disable "$touchpad"
-	xdotool mousemove 9999 9999
-else
-	touch $file
-	chmod a+w $file
-	xinput enable "$touchpad"
-fi
+case "$touchpad_line" in
+	'∼'*) xinput enable "$touchpad_name" ;;
+	*)    xinput disable "$touchpad_name"  && xdotool mousemove 9999 9999
+esac
