@@ -9,6 +9,6 @@ $(HOME)/.zshenv:.zshenv
 $(PACKER):
 	git clone --depth 1 $(PACKER_LINK) $@
 uninstall:
-	rm -rvf $(HOME)/.zshenv 
+	rm -rvf $(HOME)/.zshenv $(PACKER)
 
 .PHONY default install uninstall
