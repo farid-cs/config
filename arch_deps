@@ -27,6 +27,7 @@ starship
 sxhkd
 tlp
 xclip
+xdg-utils
 xdotool
 xorg-server
 xorg-xinit

@@ -55,3 +55,4 @@ fi 
 *.csv 
 nvim/ 
 xorg/ 
+*.epub 

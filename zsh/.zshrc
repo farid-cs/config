@@ -19,7 +19,6 @@ alias s='sensors'
 alias mr='make run'
 alias mc='make clean'
 alias c='clear'
-alias wget='wget --hsts-file=$HOME/.cache/.wget-hsts'
 
 
 

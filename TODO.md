@@ -1,6 +1,6 @@
 # TODO
-- Migrate to gitlab
-- Migrate to lazy.nvim
+- Finish migrating to gitlab
+- Add Telescope.nvim to config if needed
 - Add lsp to neovim config
 - Add dunst to the config
 - Add more images and set a wallpaper

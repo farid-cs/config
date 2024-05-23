@@ -3,7 +3,7 @@ local on_attach = function(bufnr)
 	api.config.mappings.default_on_attach(bufnr)
 
 	vim.keymap.set('n', 'h', api.node.navigate.parent_close, {noremap = true, buffer = bufnr})
-	vim.keymap.set('n', 'l', api.node.open.edit,   {noremap = true, buffer = bufnr})
+	vim.keymap.set('n', 'l', api.node.open.edit,             {noremap = true, buffer = bufnr})
 	vim.keymap.set('n', '.', api.tree.toggle_hidden_filter,  {noremap = true, buffer = bufnr})
 end
 

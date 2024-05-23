@@ -1,15 +1,15 @@
-PACKER_LINK=https://github.com/wbthomason/packer.nvim
-PACKER=$(HOME)/.local/share/nvim/site/pack/packer/start/packer.nvim
+LAZY_LINK=https://github.com/folke/lazy.nvim.git
+LAZY_PATH=~/.local/share/nvim/site/pack/lazy/start/lazy.nvim
 
 default:install
 
-install:$(HOME)/.zshenv $(PACKER)
+install:$(HOME)/.zshenv $(LAZY_PATH)
 $(HOME)/.zshenv:.zshenv
 	cp $< $@
-$(PACKER):
-	git clone --depth 1 $(PACKER_LINK) $@
-	nvim --headless -u nvim/lua/plugins.lua -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
+$(LAZY_PATH):
+	git clone --filter=blob:none --branch=stable --depth 1 $(LAZY_LINK) $@
+	nvim --headless -u nvim/lua/plugins.lua -c 'Lazy sync' -c 'qa'
 uninstall:
-	rm -rvf $(HOME)/.zshenv $(PACKER) ~/.local/share/nvim/site/pack/packer/start
+	rm -rvf ~/.zshenv ~/.local/share/nvim/lazy ~/.local/share/nvim/site/pack/lazy ~/.local/state/nvim/lazy ~/.config/nvim/lazy-lock.json
 
 .PHONY: default install uninstall
