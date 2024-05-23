@@ -41,6 +41,7 @@ fi 
 *.gitignore 
 *LICENSE 
 *starship.toml 
+starship/ 
 *.jpg 
 *.jpeg 
 *.png 
@@ -56,3 +57,9 @@ fi 
 nvim/ 
 xorg/ 
 *.epub 
+.mozilla/ 
+mozilla/ 
+firefox/ 
+yay/ 
+paru/ 
+.cache/ 󰃨
