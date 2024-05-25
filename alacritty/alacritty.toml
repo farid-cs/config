@@ -1,5 +1,8 @@
 # Colors (Gruvbox dark)
 
+[window]
+opacity = 1.0
+
 # Default colors
 [colors.primary]
 background = '#202525'

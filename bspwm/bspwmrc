@@ -14,9 +14,8 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 bspc rule -a Screenkey manage=off
-bspc rule -a Floating state=floating
-bspc rule -a St state=floating
+bspc rule -a Float state=floating
 bspc rule -a Emacs state=tiled
 xdotool mousemove 9999 9999
 xinput disable "$(xinput list --name-only | grep Touchpad)"
-xset r rate 200 40
+$HOME/.config/scripts/restore_input

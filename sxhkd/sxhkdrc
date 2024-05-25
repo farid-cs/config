@@ -9,20 +9,19 @@ super + shift + s
 
 # Toggle touch pad and restore CapsLock
 alt + d
-	$HOME/.config/sxhkd/toggle_touchpad &&\
-	setxkbmap -option 'ctrl:nocaps' &&\
-	xset r rate 200 40
+	$HOME/.config/scripts/toggle_touchpad &&\
+	$HOME/.config/scripts/restore_input
 
 # Keyboard
 alt + space
-	$HOME/.config/sxhkd/lang
+	$HOME/.config/scripts/lang
 
 # Floating terminal
 alt + shift + Return
-	st -c St
+	alacritty --class Float
 # terminal emulator
 alt + Return
-	st
+	alacritty
 
 # dmenu
 alt + p

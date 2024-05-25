@@ -4,11 +4,15 @@ fi 
 *.h 
 *.c 
 *.zig 
+*build.zig 
+*build.zig.zon 
+zig/ 
 *.el 
 *.hs 
 *.lua 
 *.py 
 *.go 
+*go.mod 
 *.sh 
 *.bash 
 *.hh 
@@ -22,41 +26,53 @@ fi 
 *.java 
 *.html 
 *.css 
-*.js 
+*.js 
+*.json 
 *.ts 
 *.sql 
-*.db 
+*.s 
+*.asm 
+
 
 *Makefile 
 *.mk 
 *.mak 
-*.s 
-*.asm 
-*.md 
-*README 
+*Dockerfile 
+
+
 *.toml 
 *.yml 
 *.yaml 
-*Dockerfile 
+*.csv 
+
+*.md 
+*README 
+
 *.gitignore 
 *LICENSE 
+
+*TODO 
+*TODO.md 
+
 *starship.toml 
 starship/ 
-*.jpg 
-*.jpeg 
-*.png 
-*.mp4 
+
+
 *.doc 
 *.docx 
 *.pdf 
 *.ppt 
 *.pptx 
-*TODO 
-*TODO.md 
-*.csv 
+*.db 
+*.jpg 
+*.jpeg 
+*.png 
+*.mp4 
+*.epub 
+
+
 nvim/ 
 xorg/ 
-*.epub 
 .mozilla/ 
 mozilla/ 
 firefox/ 

@@ -19,12 +19,10 @@ alias s='sensors'
 alias mr='make run'
 alias mc='make clean'
 alias c='clear'
-
-
-
-
 lf() {
-	cd "$(/bin/lf -print-last-dir $@)"
+	cd "$(/bin/lf -print-last-dir)"
 }
+
+
 eval "$(starship init zsh)"
 setopt autocd

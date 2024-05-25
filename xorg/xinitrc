@@ -13,5 +13,4 @@ fi
 setxkbmap -option "ctrl:nocaps" &
 sxhkd &
 polybar &
-[ -f "$HOME/TODO.md" ] && st &
 exec bspwm
