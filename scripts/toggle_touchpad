@@ -3,6 +3,6 @@ touchpad_line=$(xinput list --name-only | grep Touchpad)
 touchpad_name=$(echo "$touchpad_line" | tr -d '∼' | xargs)
 
 case "$touchpad_line" in
-	'∼'*) xinput enable "$touchpad_name" ;;
+	'∼'*) xinput enable  "$touchpad_name" ;;
 	*)    xinput disable "$touchpad_name"  && xdotool mousemove 9999 9999
 esac

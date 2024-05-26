@@ -3,6 +3,10 @@
 super + l
 	i3lock
 
+# Browser
+alt + b
+	qutebrowser && rm -rvf ~/.pki
+
 # screenshot
 super + shift + s
 	scrot -s

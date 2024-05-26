@@ -19,10 +19,15 @@ alias s='sensors'
 alias mr='make run'
 alias mc='make clean'
 alias c='clear'
+alias fzf='fzf --layout=reverse'
 lf() {
 	cd "$(/bin/lf -print-last-dir)"
 }
 
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
 
 eval "$(starship init zsh)"
 setopt autocd

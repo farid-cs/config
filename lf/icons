@@ -27,7 +27,6 @@ zig/ 
 *.html 
 *.css 
 *.js 
-*.json 
 *.ts 
 *.sql 
 *.s 
@@ -40,6 +39,7 @@ zig/ 
 *Dockerfile 
 
 
+*.json 
 *.toml 
 *.yml 
 *.yaml 
