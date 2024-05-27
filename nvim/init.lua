@@ -6,6 +6,7 @@ M = {
 	'toggle_term',
 	'nvim_tree',
 	'comment',
+	'gruvbox_config',
 	'mappings',
 }
 

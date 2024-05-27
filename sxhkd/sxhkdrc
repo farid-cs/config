@@ -1,48 +1,37 @@
 ########################## My mappings ######################################################
-# Screen lock
 super + l
 	i3lock
 
-# Browser
 alt + b
-	qutebrowser && rm -rvf ~/.pki
+	qutebrowser
 
-# screenshot
 super + shift + s
 	scrot -s
 
-# Toggle touch pad and restore CapsLock
 alt + d
 	$HOME/.config/scripts/toggle_touchpad &&\
 	$HOME/.config/scripts/restore_input
 
-# Keyboard
 alt + space
 	$HOME/.config/scripts/lang
 
-# Floating terminal
 alt + shift + Return
 	alacritty --class Float
-# terminal emulator
+
 alt + Return
 	alacritty
 
-# dmenu
 alt + p
 	dmenu_run -nb '#1e2426' -fn FreeSans-15 -l 13
 
-# Volume buttons
 XF86Audio{Raise,Lower}Volume
 	pactl set-sink-volume @DEFAULT_SINK@ {+,-}10%
+
 XF86AudioMute 
-    pactl set-sink-mute @DEFAULT_SINK@ toggle
+	pactl set-sink-mute @DEFAULT_SINK@ toggle
 
-# Brightness buttons
 XF86MonBrightness{Up,Down}
-	brightnessctl s 10{+,-} 
-#############################################################################################
-
-
+	brightnessctl s 10{+,-}
 
 ############################### Bspwm mappings ###############################################
 
