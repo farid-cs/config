@@ -1,8 +1,9 @@
 #!/bin/sh
 
-read -r file
-
-case "$1" in
-	w) xwallpaper --zoom "$file" ;;
-	*) exit 1
-esac
+while read -r file
+do
+	case "$1" in
+		w) xwallpaper --stretch "$file" ;;
+		*) exit 1
+	esac
+done
