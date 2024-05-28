@@ -1,5 +1,4 @@
 require('lazy').setup({
-	'sindrets/diffview.nvim',
 	'ellisonleao/gruvbox.nvim',
 	'nvim-tree/nvim-web-devicons',
 	'akinsho/toggleterm.nvim',
