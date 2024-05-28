@@ -1,7 +1,6 @@
 M = {
 	'options',
 	'plugins',
-	'postplugin',
 	'treesitter',
 	'toggle_term',
 	'nvim_tree',

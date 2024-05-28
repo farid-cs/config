@@ -5,7 +5,7 @@ require('lazy').setup({
 	'akinsho/toggleterm.nvim',
 	'numToStr/Comment.nvim',
 	'nvim-tree/nvim-tree.lua',
-	'windwp/nvim-autopairs',
+	{'windwp/nvim-autopairs', config = true},
 	{
 		'nvim-treesitter/nvim-treesitter', 
 		build = ':TSUpdate'

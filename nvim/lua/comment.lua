@@ -1,10 +1,10 @@
 local Setup = {
 	toggler = {
-		line = '<leader>/',
+		line  = '<leader>/',
 		block = '<leader>?',
 	},
 	opleader = {
-		line = '<leader>/',
+		line  = '<leader>/',
 		block = '<leader>?',
 	},
 	mappings = {
