@@ -1,6 +1,6 @@
 set shell sh
 
-cmd fuzzy $lf -remote "send $id select $(fd | fzf -e --layout=reverse)"
+cmd fuzzy $lf -remote "send $id select $(fd --hidden | fzf -e --layout=reverse)"
 cmd Filename %{{
 	mkdir -p "$(dirname "$@")"
 	case "$@" in
