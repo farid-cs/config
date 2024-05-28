@@ -21,6 +21,9 @@ disabled = true
 [cmake]
 disabled = true
 
+[cmd_duration]
+disabled = true
+
 [cobol]
 disabled = true
 
@@ -42,8 +45,13 @@ disabled = true
 [deno]
 disabled = true
 
+[directory]
+truncation_length = 0
+read_only = ' '
+format = '[$read_only]($read_only_style)[$path]($style) '
+
 [direnv]
-disabled = true
+disabled = false
 
 [docker_context]
 disabled = true
@@ -213,10 +221,10 @@ disabled = true
 [swift]
 disabled = true
 
-[time]
+[terraform]
 disabled = true
 
-[terraform]
+[time]
 disabled = true
 
 [typst]
@@ -236,9 +244,6 @@ disabled = true
 
 [zig]
 disabled = true
-
-[directory]
-truncation_length = 0
 
 [git_branch]
 symbol = ''
