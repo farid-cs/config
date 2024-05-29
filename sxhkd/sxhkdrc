@@ -15,7 +15,7 @@ alt + Return
 	alacritty
 
 alt + shift + Return
-	alacritty --class Float
+	st
 
 super + l
 	i3lock
