@@ -22,7 +22,7 @@ disabled = true
 disabled = true
 
 [cmd_duration]
-disabled = true
+disabled = false
 
 [cobol]
 disabled = true

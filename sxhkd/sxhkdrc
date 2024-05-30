@@ -14,9 +14,6 @@ alt + p
 alt + Return
 	alacritty
 
-alt + shift + Return
-	st
-
 super + l
 	i3lock
 
