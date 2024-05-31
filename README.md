@@ -1,1 +1,1 @@
-# sayMuFaSa's dotfiles
+# My dotfiles

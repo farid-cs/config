@@ -1,9 +1,11 @@
+acpi
 alacritty
 brightnessctl
 bspwm
 clang
 dash
 dmenu
+eza
 fd
 fzf
 gcc
