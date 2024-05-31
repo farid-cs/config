@@ -4,6 +4,7 @@ while read -r file
 do
 	case "$1" in
 		w) xwallpaper --stretch "$file" ;;
+		d) rm "$file" ;;
 		*) exit 1
 	esac
 done
