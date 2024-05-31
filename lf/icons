@@ -1,6 +1,9 @@
 di 
 fi 
 
+downloads/ 
+Downloads/ 
+
 *.h 
 *.c 
 *.zig 
