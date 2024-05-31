@@ -48,7 +48,7 @@ disabled = true
 [directory]
 truncation_length = 0
 read_only = ' '
-format = '[$read_only]($read_only_style)[$path]($style) '
+format = '[$read_only](blue)[$path]($style) '
 
 [direnv]
 disabled = false
@@ -247,3 +247,6 @@ disabled = true
 
 [git_branch]
 symbol = ''
+
+[character]
+success_symbol = '[❯](bright-green)'
