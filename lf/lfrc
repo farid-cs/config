@@ -1,11 +1,13 @@
 set shell sh
 
-cmd fuzzy $lf -remote "send $id select \"$(fd --no-ignore $($lf_hidden && echo --hidden) | fzf -e --layout=reverse)\""
-cmd Filename %{{
-	mkdir -p "$(dirname "$@")"
-	case "$@" in
-	*/) mkdir "$@" ;;
-	*)  touch "$@"
+cmd fzf $lf -remote "send $id select \"$(fd --no-ignore $($lf_hidden && echo --hidden) | fzf -e --layout=reverse)\""
+cmd create %{{
+	echo "Create file $PWD/"
+	read  -r FILE
+	mkdir -p "$(dirname "$FILE")"
+	case "$FILE" in
+		*/) mkdir "$FILE" ;;
+		*)  touch "$FILE"
 	esac
 }}
 cmd on-cd &{{
@@ -19,7 +21,7 @@ cmd on-cd &{{
 
 map . set hidden!
 map D delete
-map a push :Filename<space>
+map a create
 map i set icons!
-map F fuzzy
+map F fzf
 on-cd
