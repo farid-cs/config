@@ -1,8 +1,11 @@
 #!/bin/sh
 
-setxkbmap us
-cat <<EOF | dmenu -nb '#1e2426' -fn FreeSans-15 -l 3 | xargs setxkbmap
+LANGS=$(cat << EOF
 us
-az
 ru
-EOF 
+az
+EOF
+)
+
+setxkbmap us
+echo "$LANGS" | dmenu -nb '#1e2426' -fn FreeSans-15 -l 3 | xargs setxkbmap
