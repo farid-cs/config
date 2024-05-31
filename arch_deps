@@ -37,5 +37,5 @@ xorg-xrandr
 xorg-xset
 xwallpaper
 zathura
-zathura-pdf-mupdf
+zathura-pdf-poppler
 zsh
