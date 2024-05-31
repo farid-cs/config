@@ -1,8 +1,8 @@
 di 
 fi 
 
-downloads/ 
-Downloads/ 
+~/downloads/ 
+~/Downloads/ 
 
 *.h 
 *.c 
