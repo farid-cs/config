@@ -48,7 +48,7 @@ disabled = true
 [directory]
 truncation_length = 0
 read_only = ' '
-format = '[$read_only](blue)[$path]($style) '
+format = '[$read_only](blue)[$path](bright-white bold) '
 
 [direnv]
 disabled = false
