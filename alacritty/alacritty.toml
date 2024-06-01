@@ -1,5 +1,5 @@
 import = ['~/.config/alacritty/gruvbox.toml']
 
 [font]
-normal = { family = "Source Code Pro"}
+normal = {family = "Source Code Pro"}
 size = 11
