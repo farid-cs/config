@@ -2,3 +2,4 @@ emacs/
 pulse/
 .zcompdump
 nvim/lazy-lock.json
+vifm/
