@@ -8,7 +8,7 @@ $(HOME)/.zshenv:.zshenv
 	cp $< $@
 $(LAZY_PATH):
 	git clone --filter=blob:none --branch=stable --depth 1 $(LAZY_LINK) $@
-	nvim --headless -u nvim/lua/plugins.lua -c 'Lazy sync' -c 'qa'
+	nvim --headless -u nvim/lua/plugin_manager.lua -c 'Lazy sync' -c 'qa'
 uninstall:
 	rm -rvf ~/.zshenv $(LAZY_FILES)
 

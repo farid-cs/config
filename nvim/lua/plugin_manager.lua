@@ -63,9 +63,10 @@ require('lazy').setup({
 		dependencies = {'nvim-tree/nvim-web-devicons'},
 	},
 	{
-		'nvim-treesitter/nvim-treesitter', 
+		'nvim-treesitter/nvim-treesitter',
 		build = ':TSUpdate',
-		opts = {
+		main  = 'nvim-treesitter.configs',
+		opts  = {
 			ensure_installed = { 'python', 'c', 'lua', 'vim', 'vimdoc', 'query', 'go', 'rust' },
 			sync_install     = false,
 			auto_install     = true,
