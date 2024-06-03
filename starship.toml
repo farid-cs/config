@@ -247,6 +247,3 @@ disabled = true
 
 [git_branch]
 symbol = ''
-
-[character]
-success_symbol = '[❯](bright-green)'
