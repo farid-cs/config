@@ -23,4 +23,5 @@ map . set hidden!
 map D delete
 map a create
 map i set icons!
+map S fzf
 on-cd
