@@ -51,7 +51,7 @@ read_only = ' '
 format = '[$read_only](blue)[$path](bright-white bold) '
 
 [direnv]
-disabled = false
+disabled = true
 
 [docker_context]
 disabled = true
