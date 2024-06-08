@@ -1,5 +1,3 @@
-set shell sh
-
 cmd fzf $lf -remote "send $id select \"$(fd --no-ignore $($lf_hidden && echo --hidden) | fzf -e --layout=reverse)\""
 cmd create %{{
 	echo "Create file $PWD/"
@@ -24,4 +22,5 @@ map D delete
 map a create
 map i set icons!
 map S fzf
+map <c-t> &alacritty
 on-cd
