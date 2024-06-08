@@ -9,3 +9,4 @@ EOF
 
 setxkbmap us
 echo "$LANGS" | dmenu -nb '#1e2426' -fn FreeSans-15 -l 3 | xargs setxkbmap
+xmodmap $HOME/.config/xorg/Xmodmap
