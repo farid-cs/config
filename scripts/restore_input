@@ -1,0 +1,5 @@
+#!/bin/sh
+XMODMAP=$HOME/.config/xorg/Xmodmap
+
+xmodmap $XMODMAP
+xset r rate 250 35
