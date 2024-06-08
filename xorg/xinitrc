@@ -1,7 +1,6 @@
 #!/bin/sh
 WALLPAPER=$HOME/.config/image/wallpaper
 
-sxhkd &
 polybar &
 xwallpaper --stretch $WALLPAPER &
 $HOME/.config/scripts/toggle_touchpad &
