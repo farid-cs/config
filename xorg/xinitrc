@@ -1,9 +1,12 @@
 #!/bin/sh
 
 WALLPAPER=$HOME/.config/image/wallpaper
+XMODMAP=$HOME/.config/xorg/Xmodmap
+
 sxhkd &
 polybar &
 xwallpaper --stretch $WALLPAPER &
+xmodmap $XMODMAP &
 $HOME/.config/scripts/toggle_touchpad &
-$HOME/.config/scripts/restore_input &
+$HOME/.config/scripts/set_rate &
 exec bspwm
