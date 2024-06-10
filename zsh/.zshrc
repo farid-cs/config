@@ -9,8 +9,8 @@ zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
 
-alias grep='grep --color'
-alias ls='ls --color --group-directories-first'
+alias grep='grep --color=auto'
+alias ls='ls --color=auto --group-directories-first'
 alias t='sudo tlp start'
 alias s='sensors'
 alias a='acpi'
@@ -18,6 +18,9 @@ alias mr='make run'
 alias mc='make clean'
 alias c='clear'
 alias fzf='fzf --layout=reverse'
+manpdf() {
+	/bin/man -Tpdf $@ | zathura -
+}
 
 bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'k' vi-up-line-or-history
