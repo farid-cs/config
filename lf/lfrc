@@ -23,4 +23,8 @@ map a create
 map i set icons!
 map S fzf
 map <c-t> &alacritty
+map g. cd ~/.config
+map gc cd ~/code
+map gd cd ~/downloads
+map gm cd ~/music
 on-cd
