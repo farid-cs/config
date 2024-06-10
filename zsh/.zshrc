@@ -10,7 +10,7 @@ zmodload zsh/complist
 compinit
 
 alias grep='grep --color'
-alias ls='eza -l --git --group-directories-first'
+alias ls='ls --color --group-directories-first'
 alias t='sudo tlp start'
 alias s='sensors'
 alias a='acpi'
