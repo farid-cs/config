@@ -9,7 +9,7 @@ alt + space
 	$HOME/.config/scripts/lang
 
 alt + p
-	dmenu_run -nb '#1e2426' -fn FreeSans-15 -l 13
+	dmenu_run -fn FreeSans-15
 
 alt + Return
 	alacritty
@@ -29,6 +29,8 @@ XF86AudioMute
 XF86MonBrightness{Up,Down}
 	brightnessctl s 10{+,-}
 
+alt + semicolon
+	dmenu
 ############################### Bspwm mappings ###############################################
 alt + {_,shift} + q
 	bspc node -{c,k}
