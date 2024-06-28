@@ -4,5 +4,6 @@ WALLPAPER=$HOME/.config/image/wallpaper
 polybar &
 xwallpaper --stretch $WALLPAPER &
 $HOME/.config/scripts/toggle_touchpad &
-$HOME/.config/scripts/restore_input &
+$HOME/.config/scripts/restore_keyboard &
+alacritty -e todo &
 exec bspwm

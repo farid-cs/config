@@ -14,12 +14,15 @@ alias ls='ls --color=auto --group-directories-first'
 alias t='sudo tlp start'
 alias s='sensors'
 alias a='acpi'
-alias mr='make run'
 alias mc='make clean'
 alias c='clear'
 alias fzf='fzf --layout=reverse'
-manpdf() {
-	/bin/man -Tpdf $@ | zathura -
+alias sway='XKB_DEFAULT_OPTIONS=caps:escape sway'
+lf() {
+	TMP="$(mktemp)"
+	/bin/lf -last-dir-path "$TMP" $@
+	cd "$(cat $TMP)"
+	rm "$TMP"
 }
 
 bindkey -M menuselect 'h' vi-backward-char

@@ -1,8 +1,11 @@
-di 
+di 
 fi 
 
 ~/downloads/ 
 ~/Downloads/ 
+~/music/ 
+~/.cache/ 󰃨
+~/ 󰠦
 
 *.h 
 *.c 
@@ -16,6 +19,7 @@ zig/ 
 *.py 
 *.go 
 *go.mod 
+go/ 
 *.sh 
 *.bash 
 *.hh 
@@ -81,4 +85,3 @@ nvim/ 
 xorg/ 
 yay/ 
 paru/ 
-.cache/ 󰃨

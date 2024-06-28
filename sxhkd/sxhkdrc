@@ -2,8 +2,9 @@
 alt + b
 	qutebrowser
 
-alt + d
-	$HOME/.config/scripts/toggle_touchpad && $HOME/.config/scripts/restore_input
+# input
+alt + i
+	$HOME/.config/scripts/toggle_touchpad && $HOME/.config/scripts/restore_keyboard
 
 alt + space
 	$HOME/.config/scripts/lang
@@ -39,7 +40,7 @@ alt + m
 	bspc desktop -l next
 
 alt + {f,t,shift + t,s}
-	bspc node -t {fullscreen,tiled,pseudo_tiled,floating}
+	bspc node -t \~{fullscreen,tiled,pseudo_tiled,floating}
 
 alt + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
