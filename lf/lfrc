@@ -8,12 +8,6 @@ cmd create %{{
 		*)  touch "$FILE"
 	esac
 }}
-cmd on-cd &{{
-	export STARSHIP_SHELL=
-	export STARSHIP_CONFIG=~/.config/lf/starship.toml
-	fmt="$(starship prompt)"
-	lf -remote "send $id set promptfmt \"$fmt\""
-}}
 
 map . set hidden!
 map D delete
@@ -26,5 +20,3 @@ map gc cd ~/code
 map gd cd ~/downloads
 map gm cd ~/music
 map <a-/> fzf
-
-on-cd
