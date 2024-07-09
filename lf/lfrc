@@ -1,4 +1,7 @@
-cmd fzf $lf -remote "send $id select \"$(fd --no-ignore $($lf_hidden && echo --hidden) | fzf -e --layout=reverse)\""
+cmd fzf ${{
+	MESSAGE="select \"$(fd --no-ignore $($lf_hidden && echo --hidden) | fzf -e --layout=reverse)\""
+	lf -remote "send $id $MESSAGE"
+}}
 cmd create %{{
 	echo "Create file $PWD/"
 	read  -r FILE
