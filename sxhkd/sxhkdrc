@@ -19,7 +19,7 @@ super + l
 	i3lock
 
 super + shift + s
-	scrot -s
+	flameshot gui
 
 XF86Audio{Raise,Lower}Volume
 	pactl set-sink-volume @DEFAULT_SINK@ {+,-}10%

@@ -7,6 +7,7 @@ dash
 dmenu
 emacs
 fd
+flameshot
 fzf
 gcc
 git
@@ -24,7 +25,6 @@ pulseaudio
 qutebrowser
 ripgrep
 rust
-scrot
 starship
 sxhkd
 tlp
