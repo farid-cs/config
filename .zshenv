@@ -1,5 +1,5 @@
-CONFIG=$HOME/.config
 export EDITOR=nvim
-export XINITRC=$CONFIG/xorg/xinitrc
-export XAUTHORITY=$HOME/.local/share/Xauthority
-export ZDOTDIR=$CONFIG/zsh
+export XINITRC=~/.config/xorg/xinitrc
+export XAUTHORITY=~/.local/share/Xauthority
+export ZDOTDIR=~/.config/zsh
+export GOPATH=~/.go
