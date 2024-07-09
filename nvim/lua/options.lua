@@ -3,7 +3,6 @@ local g = vim.g
 
 o.number             = true
 o.clipboard          = 'unnamedplus'
-o.guicursor          = 'n-i-v-c:blockCur-Cursor'
 o.laststatus         = 0
 g.loaded_netrwPlugin = 1
 g.loaded_netrw       = 1
