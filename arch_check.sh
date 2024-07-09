@@ -7,9 +7,9 @@ for pkg in $package_list;do
 	missing="$pkg $missing"
 done
 
-[ -z "$missing" ] && echo "All packages are present" && exit 0
+[ -z "$missing" ] && echo 'All packages are present' && exit 0
 
-echo "Missing packages:"
+echo 'Missing packages:'
 for pkg in $missing;do
 	echo "   $pkg"
 done
