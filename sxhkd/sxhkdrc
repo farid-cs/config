@@ -2,7 +2,6 @@
 alt + b
 	qutebrowser
 
-# input
 alt + i
 	$HOME/.config/scripts/toggle_touchpad && $HOME/.config/scripts/restore_keyboard
 
