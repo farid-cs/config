@@ -14,6 +14,7 @@ alias t='sudo tlp start'
 alias s='sensors'
 alias a='acpi'
 alias mc='make clean'
+alias mt='make test'
 alias c='clear'
 alias fzf='fzf --layout=reverse'
 alias sway='XKB_DEFAULT_OPTIONS=caps:escape sway'
@@ -35,6 +36,6 @@ autoload -Uz vcs_info
 precmd_vcs_info() { vcs_info }
 precmd_functions+=( precmd_vcs_info )
 zstyle ':vcs_info:git:*' formats '%b '
-PROMPT='%B%~%b %B%F{magenta}${vcs_info_msg_0_}%f%b%# '
+PROMPT='%B%~%b %B%F{magenta}${vcs_info_msg_0_}%f%b%(?.%F{green}❯%f.%F{red}❯%f) '
 
 setopt autocd
