@@ -1,6 +1,6 @@
 #!/bin/sh
 package_list=$(cat arch_deps)
-missing=""
+missing=
 
 for pkg in $package_list;do
 	pacman -Q $pkg 2>/dev/null ||
