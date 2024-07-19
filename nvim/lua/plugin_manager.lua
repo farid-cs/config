@@ -9,9 +9,22 @@ end
 
 require('lazy').setup({
 	{
+		'lukas-reineke/indent-blankline.nvim',
+		config = true,
+		main = 'ibl',
+		opts = {
+			indent = {char = '▏'},
+			scope = {
+				show_start = false,
+				show_end = false,
+			},
+		},
+	},
+	{
 		'neovim/nvim-lspconfig',
 		init = function()
 			require'lspconfig'.clangd.setup{}
+			require'lspconfig'.gopls.setup{}
 		end,
 	},
 	{
