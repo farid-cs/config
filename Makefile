@@ -5,6 +5,6 @@ install:
 	cp scripts/* /usr/local/bin
 	cp .zshenv $(HOME)/.zshenv
 uninstall:
-	rm -r ~/.zshenv $(LAZY_FILES)
+	rm -rf ~/.zshenv $(LAZY_FILES)
 
 .PHONY: default install uninstall
