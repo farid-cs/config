@@ -11,4 +11,4 @@ unused_display() {
 	echo $d
 }
 
-xinit $XINITRC -- /bin/X :$(unused_display) vt$TTY_NUM
+exec xinit $XINITRC -- /bin/X :$(unused_display) vt$TTY_NUM
