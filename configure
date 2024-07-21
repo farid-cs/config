@@ -1,0 +1,4 @@
+#!/bin/sh
+cat <<EOF > config.mk
+HOME:=${HOME}
+EOF

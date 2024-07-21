@@ -1,0 +1,14 @@
+#!/bin/sh
+XINITRC=~/.config/xinitrc/bspwm
+TTY_NUM=$(tty | cut -c 9-)
+
+unused_display() {
+	local d=0
+	while true ; do
+		[ -e "/tmp/.X$d-lock" -o -S "/tmp/.X11-unix/X$d" ] || break
+		d=$(($d + 1))
+	done
+	echo $d
+}
+
+xinit $XINITRC -- /bin/X :$(unused_display) vt$TTY_NUM

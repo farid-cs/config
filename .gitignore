@@ -3,3 +3,4 @@ pulse/
 .zcompdump
 nvim/lazy-lock.json
 vifm/
+/config.mk
