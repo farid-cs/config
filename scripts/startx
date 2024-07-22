@@ -1,5 +1,5 @@
 #!/bin/sh
-XINITRC=~/.config/xinitrc/bspwm
+XINITRC=~/.config/xinitrc/${1:-bspwm}
 TTY_NUM=$(tty | cut -c 9-)
 
 unused_display() {
@@ -10,5 +10,11 @@ unused_display() {
 	done
 	echo $d
 }
+
+if [ $# -gt 1 ]
+then
+	echo 'Usage: startx [xinitrc_file]'
+	exit 1
+fi
 
 exec xinit $XINITRC -- /bin/X :$(unused_display) vt$TTY_NUM
