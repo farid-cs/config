@@ -29,8 +29,6 @@ XF86AudioMute
 XF86MonBrightness{Up,Down}
 	brightnessctl s 10{+,-}
 
-alt + semicolon
-	dmenu
 ############################### Bspwm mappings ###############################################
 alt + {_,shift} + q
 	bspc node -{c,k}
