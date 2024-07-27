@@ -1,9 +1,10 @@
 #!/bin/sh
 WALLPAPER=$HOME/.config/image/wallpaper
 
+sxhkd &
 polybar &
 xwallpaper --stretch $WALLPAPER &
-$HOME/.config/scripts/toggle_touchpad &
-$HOME/.config/scripts/restore_keyboard &
+toggle_touchpad &
+restore_keyboard &
 alacritty -e todo &
 exec bspwm
