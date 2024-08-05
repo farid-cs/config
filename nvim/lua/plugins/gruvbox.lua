@@ -8,6 +8,7 @@ return {
 			['@function.call'] = {fg = '#b8bb26'},
 			['@function.method'] = {fg = '#b8bb26'},
 			['@function.method.call'] = {fg = '#b8bb26'},
+			['@lsp.type.method'] = {fg = '#b8bb26'},
 		},
 	},
 	init = function()
