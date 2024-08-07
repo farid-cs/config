@@ -2,19 +2,14 @@ cmd fzf ${{
 	MESSAGE="select \"$(fd --no-ignore $($lf_hidden && echo --hidden) | fzf -e --layout=reverse)\""
 	lf -remote "send $id $MESSAGE"
 }}
-cmd create %{{
-	echo "Create file $PWD/"
-	read  -r FILE
-	mkdir -p "$(dirname "$FILE")"
-	case "$FILE" in
-		*/) mkdir "$FILE" ;;
-		*)  touch "$FILE"
-	esac
-}}
+
+cmd touch &touch "$@"
+cmd mkdir &mkdir -p "$@"
 
 map . set hidden!
 map D delete
-map a create
+map a push :touch<space>
+map A push :mkdir<space>
 map i set icons!
 map S fzf
 map <c-t> &alacritty
