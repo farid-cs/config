@@ -1,5 +1,4 @@
 # TODO
-- Finish migrating to gitlab
-- Add lsp to neovim config
+- Find a way to install zelbar
 - Add dunst to the config
 - Add more images
