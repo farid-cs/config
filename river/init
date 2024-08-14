@@ -172,3 +172,6 @@ riverctl spawn 'wbg ~/.config/image/wallpaper'
 
 # Todo file
 riverctl spawn 'foot todo'
+
+# Wmenu
+riverctl map normal Alt P spawn wmenu-run
