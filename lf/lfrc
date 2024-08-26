@@ -5,6 +5,7 @@ cmd fzf ${{
 
 cmd touch &touch "$@"
 cmd mkdir &mkdir -p "$@"
+cmd open &open "$f"
 
 map . set hidden!
 map D delete

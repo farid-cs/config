@@ -1,0 +1,38 @@
+#!/bin/sh
+path="$1"
+mime_type="$(file -bi -- "$path")"
+
+if [ ! "$#" = 1 ]
+then
+	echo Wrong number of arguments >&2
+	exit 1
+fi
+
+case "$mime_type" in
+	application/pdf*)
+		exec zathura -- "$path"
+	;;
+
+	image*)
+		exec nsxiv -- "$path"
+	;;
+
+	audio*)
+		exec mpv --player-operation-mode=pseudo-gui -- "$path"
+	;;
+
+	video*)
+		exec mpv -- "$path"
+	;;
+
+	text/html*)
+		exec qutebrowser -- "$path"
+	;;
+
+	text*)
+		exec foot -- nvim -- "$path"
+	;;
+
+	*)
+	;;
+esac
