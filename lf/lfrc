@@ -1,8 +1,3 @@
-cmd fzf ${{
-	MESSAGE="select \"$(fd --no-ignore $($lf_hidden && echo --hidden) | fzf -e --layout=reverse)\""
-	lf -remote "send $id $MESSAGE"
-}}
-
 cmd touch &touch "$@"
 cmd mkdir &mkdir -p "$@"
 cmd open &open "$f"
@@ -11,7 +6,6 @@ map . set hidden!
 map D delete
 map a push :touch<space>
 map A push :mkdir<space>
-map i set icons!
 map S fzf
 map <c-t> &alacritty
 map g. cd ~/.config
