@@ -1,9 +1,21 @@
 alias grep='grep --color=auto'
 alias ls='ls --color=auto --group-directories-first'
-alias t='sudo tlp start'
+alias t='doas tlp start'
 alias s='sensors'
 alias a='acpi'
 alias mc='make clean'
 alias mt='make test'
 alias c='clear'
 alias fzf='fzf --layout=reverse'
+
+alias gh=cd
+alias gc='cd ~/code'
+alias gm='cd ~/music'
+alias gd='cd ~/downloads'
+alias gt='cd ~/temp'
+alias gn='cd ~/notes'
+alias g.='cd ~/.config'
+
+alias xi='doas xbps-install -S'
+alias xq='doas xbps-query'
+alias xr='doas xbps-remove'
