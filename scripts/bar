@@ -1,16 +1,3 @@
 #!/bin/sh
-ctr=0
 
-show() {
-	while true
-	do
-		[ "$((ctr%300))" = 0 ] && TIME=$(date +%H:%M)
-		[ "$((ctr%100))" = 0 ] && BAT=$(acpi | awk '{print $4}' | tr -d ',')
-
-		echo "%{X:20}$TIME %{X:2280}BAT $BAT"
-		ctr=$((ctr+1))
-		sleep 0.1
-	done
-}
-
-show | zelbar -B 0x282828 -F 0xFFFFFF -fn 'Source Code Pro'
+slstatus | zelbar -btm -B 0x1d2021 -F 0xFFFFFF -fn 'Source Code Pro'

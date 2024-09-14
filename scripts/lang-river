@@ -1,0 +1,8 @@
+#!/bin/sh
+
+riverctl keyboard-layout us
+cat <<EOF | wmenu -f 'Source Code Pro 17' | xargs riverctl keyboard-layout
+us
+ru
+az
+EOF
