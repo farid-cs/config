@@ -1,10 +1,10 @@
 #!/bin/sh
 path="$1"
-mime_type="$(file -bi -- "$path")"
+mime_type="$(file -Lbi -- "$path")"
 
 if [ ! "$#" = 1 ]
 then
-	echo Wrong number of arguments >&2
+	echo 'Usage: open <file_name>' >&2
 	exit 1
 fi
 
