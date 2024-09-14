@@ -1,6 +1,3 @@
-lf() {
-	TMP="$(mktemp)"
-	/bin/lf -last-dir-path "$TMP" $@
-	cd "$(cat $TMP)"
-	rm "$TMP"
+lf () {
+    cd "$(command lf -print-last-dir "$@")"
 }
