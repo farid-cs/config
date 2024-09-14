@@ -1,0 +1,18 @@
+#!/bin/sh
+
+case $1 in
+	up)
+		arg=${2:-5%}
+		amixer -M -c 1 set Master unmute
+		amixer -M -c 1 set Master "$arg+"
+	;;
+	down)
+		arg=${2:-5%}
+		amixer -M -c 1 set Master unmute
+		amixer -M -c 1 set Master "$arg-"
+	;;
+	toggle)
+		amixer -M -c 1 set Master toggle
+		# amixer -M -c 1 set Speaker unmute
+	;;
+esac
