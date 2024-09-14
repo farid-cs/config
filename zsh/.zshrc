@@ -8,4 +8,4 @@ files=(
 	promptrc
 )
 
-for file in $files; do . ~/.config/zsh/$file; done
+for file in $files; do . $ZDOTDIR/$file; done
