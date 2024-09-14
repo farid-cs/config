@@ -1,8 +1,8 @@
 start_wm() {
-	echo -n 'Start river? [Y/n] '
+	echo -n 'Start window manager? [Y/n] '
 	read -r confirm
 	echo "$confirm" | grep -Eq '^\s*([Yy][Ee][Ss])?\s*$' &&
-	exec river -no-xwayland
+	exec wm
 }
 
 [ -z "$DISPLAY" ] && start_wm
