@@ -6,4 +6,12 @@ return {
 		'nvim-tree/nvim-web-devicons',
 		'MunifTanjim/nui.nvim',
 	},
+	opts = {
+		filesystem = {
+			hijack_netrw_behaivor = "open_current",
+		},
+		window = {
+			position = "current",
+		},
+	},
 }
