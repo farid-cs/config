@@ -1,18 +1,21 @@
 #!/bin/sh
+cmd=${1:-get}
 
-case $1 in
+case $cmd in
+	get)
+		amixer -M sget Master | tail -n1 | awk '{print $4}' | tr -d '[]'
+	;;
 	up)
 		arg=${2:-5%}
-		amixer -M -c 1 set Master unmute
-		amixer -M -c 1 set Master "$arg+"
+		amixer -M set Master unmute
+		amixer -M set Master "$arg+"
 	;;
 	down)
 		arg=${2:-5%}
-		amixer -M -c 1 set Master unmute
-		amixer -M -c 1 set Master "$arg-"
+		amixer -M set Master unmute
+		amixer -M set Master "$arg-"
 	;;
 	toggle)
-		amixer -M -c 1 set Master toggle
-		# amixer -M -c 1 set Speaker unmute
+		amixer -M set Master toggle
 	;;
 esac
