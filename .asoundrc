@@ -1,9 +1,12 @@
+defaults.ctl.card 1;
+defaults.pcm.card 1;
+
 pcm.!default {
         type plug
         slave.pcm "dmixer"
 }
 
-pcm.dmixer  {
+pcm.dmixer {
         type dmix
         ipc_key 1024
         slave {
