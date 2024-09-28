@@ -1,2 +1,6 @@
-vim.keymap.set('n', '<leader>e', '<cmd>Neotree toggle<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>e', '<cmd>Neotree<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<leader>w', '<C-w>', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>m', ':make<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>c', ':Compile ', { noremap = true })
+vim.keymap.set('n', '<leader>t', '<cmd>ToggleTerm<CR>', { noremap = true, silent = true })
+vim.keymap.set('t', '<C-Space>', '<C-\\><C-n>', { noremap = true, silent = true })
