@@ -7,8 +7,6 @@ o.laststatus         = 0
 o.list               = true
 o.listchars          = 'tab:» '
 
-g.loaded_netrwPlugin = 1
-g.loaded_netrw       = 1
 g.mapleader          = ' '
 g.zig_fmt_autosave   = false
 
