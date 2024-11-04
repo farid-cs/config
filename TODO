@@ -1,5 +1,6 @@
-# TODO
-- Find a way to install zelbar
+TODO
+====
+- Make lazy.nvim a git submodule
 - Add dunst to the config
 - Add more images
 - Find a way to uninstall all scripts from the system

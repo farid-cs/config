@@ -6,10 +6,11 @@ LAZY_FILES=\
 	~/.config/nvim/lazy-lock.json
 
 install:
-	mkdir -p $(BIN_PREFIX)/bin
-	cp -p scripts/* $(BIN_PREFIX)/bin
-	cp -p .zshenv $(HOME)/.zshenv
-	cp .asoundrc $(HOME)/.asoundrc
+	cp -p .zprofile $(HOME)/.zprofile
+	cp -p .asoundrc $(HOME)/.asoundrc
+	mkdir -p $(PREFIX)/bin
+	cp -p scripts/* $(PREFIX)/bin
+	mkdir -p /etc/modprobe.d
 	cp etc/nobeep.conf /etc/modprobe.d
 uninstall:
 	rm -rf ~/.zshenv $(LAZY_FILES)

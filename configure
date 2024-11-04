@@ -1,5 +1,5 @@
 #!/bin/sh
 cat <<EOF > config.mk
-HOME:=${HOME}
-BIN_PREFIX:=~/.local
+HOME = ${HOME}
+PREFIX = ${HOME}/.local
 EOF
