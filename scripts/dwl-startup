@@ -1,6 +1,4 @@
 #!/bin/sh
 
-wbg ~/.config/image/wallpaper &
 slstatus -s | dwlb -status-stdin all &
-foot todo &
 exec dwlb
