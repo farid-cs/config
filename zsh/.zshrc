@@ -8,4 +8,5 @@ files=(
 	promptrc
 )
 
-for file in $files; do . $ZDOTDIR/$file; done
+for file in $files; do . "${ZDOTDIR}/${file}"; done
+[ -f "${HOME}/todo.bin" ] && todo
