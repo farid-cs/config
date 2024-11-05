@@ -13,6 +13,6 @@ install:
 	mkdir -p /etc/modprobe.d
 	cp etc/nobeep.conf /etc/modprobe.d
 uninstall:
-	rm -rf ~/.zshenv $(LAZY_FILES)
+	rm -rf ~/.zprofile $(LAZY_FILES)
 
 .PHONY: install uninstall
