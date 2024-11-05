@@ -1,0 +1,8 @@
+#!/bin/sh
+WALLPAPER=$HOME/.config/image/wallpaper
+
+xwallpaper --stretch $WALLPAPER &
+toggle_touchpad &
+restore_keyboard &
+alacritty -e todo &
+exec dwm
