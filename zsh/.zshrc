@@ -9,4 +9,3 @@ files=(
 )
 
 for file in $files; do . "${ZDOTDIR}/${file}"; done
-[ -f "${HOME}/todo.bin" ] && todo
