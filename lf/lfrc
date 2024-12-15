@@ -1,6 +1,7 @@
 cmd touch &touch "$@"
 cmd mkdir &mkdir -p "$@"
 cmd open &open "$f"
+cmd term &st
 
 map . set hidden!
 map D delete
@@ -13,3 +14,4 @@ map gc cd ~/code
 map gd cd ~/downloads
 map gm cd ~/music
 map <a-/> fzf
+map t :term
