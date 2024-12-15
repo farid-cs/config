@@ -14,7 +14,7 @@ case "$mime_type" in
 	;;
 
 	image*)
-		exec imv -- "$path"
+		exec nsxiv -- "$path"
 	;;
 
 	audio*)
