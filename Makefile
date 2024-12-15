@@ -1,13 +1,11 @@
 include config.mk
 
 install:
-	cp -p .zprofile $(HOME)/.zprofile
-	cp -p .asoundrc $(HOME)/.asoundrc
+	cp -p .zprofile .asoundrc $(HOME)
 	mkdir -p $(PREFIX)/bin
 	cp -p scripts/* $(PREFIX)/bin
-	mkdir -p /etc/modprobe.d
 
 uninstall:
-	rm -rf ~/.zprofile
+	rm -rf ~/.zprofile ~/.asoundrc
 
 .PHONY: install uninstall
