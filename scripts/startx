@@ -1,5 +1,0 @@
-#!/bin/sh
-client=${1:-~/.config/xinit/xinitrc}
-server=~/.config/xinit/xserverrc
-
-exec xinit $client -- $server
