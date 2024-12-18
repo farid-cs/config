@@ -1,7 +1,6 @@
 local set = vim.keymap.set
 
 set('n',    '<leader>e',    ':Ex<cr>',                  { noremap = true, silent = true })
-set('n',    '<leader>m',    ':Compile make ',           { noremap = true })
 set('n',    '<leader>t',    ':rightbelow term<cr>i',    { noremap = true, silent = true })
 set('t',    '<c-j>',        '<c-\\><c-n><c-w>j',        { noremap = true, silent = true })
 set('t',    '<c-k>',        '<c-\\><c-n><c-w>k',        { noremap = true, silent = true })
